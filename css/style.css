@@ -1,0 +1,108 @@
+body {
+    background: linear-gradient(135deg, #1e1e2f, #2a2a4a);
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.mobile-container {
+    max-width: 400px;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.glass-panel {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 25px;
+    flex: 1;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.clock-display {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #00d2ff;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.info-box {
+    background: rgba(0, 210, 255, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    text-align: center;
+    border: 1px solid rgba(0, 210, 255, 0.3);
+}
+
+input, select, button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    box-sizing: border-box;
+}
+
+input, select {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+select option {
+    background: #1e1e2f;
+    color: white;
+}
+
+input::placeholder {
+    color: #bbb;
+}
+
+button {
+    background: #00d2ff;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #3a7bd5;
+    color: white;
+}
+
+#qrcode-container {
+    display: none; 
+    justify-content: center;
+    margin-top: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}

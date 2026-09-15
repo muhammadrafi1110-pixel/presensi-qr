@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Presensi Dosen</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Library QR Code -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="glass-panel">
+            <div id="clock" class="clock-display">Memuat jam...</div>
+            <h2>Buat Sesi Presensi</h2>
+            
+            <select id="matkul">
+                <option value="">-- Pilih Mata Kuliah --</option>
+                <option value="Interaksi Manusia & Komputer (Kamis, 14.30-17.00)">Interaksi Manusia & Komputer (Kamis, 14.30-17.00)</option>
+                <option value="Jaringan Komputer II (Kamis, 11.00-13.30)">Jaringan Komputer II (Kamis, 11.00-13.30)</option>
+                <option value="Komputer Grafik (Rabu, 14.30-17.00)">Komputer Grafik (Rabu, 14.30-17.00)</option>
+                <option value="Konsep Data Warehouse & Data Mining (Senin, 08.30-11.00)">Konsep Data Warehouse & Data Mining (Senin, 08.30-11.00)</option>
+                <option value="Pemrograman Berorientasi Objek (Selasa, 14.30-17.00)">Pemrograman Berorientasi Objek (Selasa, 14.30-17.00)</option>
+                <option value="Proyek Perangkat Lunak (Selasa, 08.30-11.00)">Proyek Perangkat Lunak (Selasa, 08.30-11.00)</option>
+                <option value="Rekayasa Perangkat Lunak II (Rabu, 08.30-11.00)">Rekayasa Perangkat Lunak II (Rabu, 08.30-11.00)</option>
+            </select>
+
+            <input type="text" id="waktu" placeholder="Waktu (ex: 11.00-14.30)">
+            <input type="number" id="pertemuan" placeholder="Pertemuan Ke-">
+            <button onclick="buatSesi()">Buat Sesi & Tampilkan QR</button>
+            
+            <div id="qrcode-container"></div>
+        </div>
+
+        <div class="glass-panel">
+            <h3>Daftar Mahasiswa Hadir</h3>
+            <table id="tabel-presensi">
+                <thead>
+                    <tr>
+                        <th>NPM</th>
+                        <th>Nama</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>24105111122</td>
+                        <td>Muhammad Alwi</td>
+                        <td>Hadir</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
