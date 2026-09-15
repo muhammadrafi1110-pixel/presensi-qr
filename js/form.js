@@ -13,7 +13,7 @@ if (matkul && waktu && pertemuan) {
     btnSubmit.disabled = true;
 }
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbjcgAoTzMaQaXjZhllxkViDTCBuoNCMFB5cTxRV0SGP1cFkmw3KHUNOZq1_kTUN9oZ/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbycjGaOTzMaQaXjZhllxkViDTCBuoNcMFB5cTxRV0SGP1cFkmw3KHUNOZq1_kTuN90Z/exec';
 
 function kirimData() {
     const npm = document.getElementById('npm').value;
