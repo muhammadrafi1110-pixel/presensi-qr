@@ -1,4 +1,3 @@
-// Mengambil parameter singkat dari URL QR Code
 const urlParams = new URLSearchParams(window.location.search);
 const matkul = urlParams.get('m');
 const waktu = urlParams.get('w');
@@ -14,7 +13,6 @@ if (matkul && waktu && pertemuan) {
     btnSubmit.disabled = true;
 }
 
-// === PASTE URL APPS SCRIPT KAMU DI DALAM TANDA KUTIP DI BAWAH INI ===
 const scriptURL = 'https://script.google.com/macros/s/AKfycbjcgAoTzMaQaXjZhllxkViDTCBuoNCMFB5cTxRV0SGP1cFkmw3KHUNOZq1_kTUN9oZ/exec';
 
 function kirimData() {
